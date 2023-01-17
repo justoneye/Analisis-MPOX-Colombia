@@ -1,13 +1,18 @@
-# Analisis-MPOX-Colombia
+# Análisis de Casos Positivos de Viruela Símica en Colombia
 
-## Descripción del Proyecto
+## 1. Descripción del Proyecto
 
 ### 1.1. Impacto del análisis con el conjunto de datos
-Actualmente, Colombia se encuentra enfrentado la epidemia de Viruela símica también conocida como viruela del mono. Si bien, las autoridades competentes se encuentran en las gestiones requeridas, como ciudadanos es necesario estar informados en cuanto a su evolución, identificar los puntos de mayor contagio, personas a las que más afecta, sintomatología y demás información que nos permita poder estar alerta en el cuidado de nuestra salud.  Así como en lo discutido en el grupo, algunos tienen la percepción de que esta epidemia no es relevante en su día a día, sin embargo, no es una opinión unánime. Por lo anterior, es necesario hacer visible, mediante el uso de datos, que a pesar de que es una enfermedad que no tiene tanta discusión como la del coronavirus, está presente entre nosotros y es necesario tener precauciones en la cotidianidad.
+Actualmente, Colombia se encuentra enfrentado la epidemia de Viruela símica también conocida como viruela del mono. Si bien, las autoridades competentes se encuentran en las gestiones requeridas, como ciudadanos es necesario estar informados en cuanto a su evolución, identificar los puntos de mayor contagio, personas a las que más afecta, sintomatología y demás información que nos permita poder estar alerta en el cuidado de nuestra salud.  
+<br/>
+Así como en lo discutido en el grupo, algunos tienen la percepción de que esta epidemia no es relevante en su día a día, sin embargo, no es una opinión unánime. Por lo anterior, es necesario hacer visible, mediante el uso de datos, que a pesar de que es una enfermedad que no tiene tanta discusión como la del coronavirus, está presente entre nosotros y es necesario tener precauciones en la cotidianidad.
 
 ### 1.2. Problema Especifico 
 Basado en la información recolectada hasta la fecha en Colombia:
-- ¿Cuántas personas se han contagiado?, ¿Dónde están ubicados los casos?, ¿Es posible saber cuál es la mayor fuente de contagio?, ¿Cuánto dura la hospitalización promedio? 
+- ¿Cuántas personas se han contagiado?
+- ¿Dónde están ubicados los casos?
+- ¿Es posible saber cuál es la mayor fuente de contagio?
+- ¿Cuánto dura la hospitalización promedio? 
 
 ### 1.3.  Restricciones del análisis  
 De acuerdo con la información encontrada en la página de datos, se tomará como fecha de corte de información la última actualización (5 de diciembre de 2022), en caso de que se agreguen nuevos datos, no se tendrán en cuenta. Adicionalmente, dado que la Viruela en Colombia es relativamente nueva, es factible que no se encuentren tantas fuentes adicionales a la hora de citar.
@@ -16,16 +21,14 @@ De acuerdo con la información encontrada en la página de datos, se tomará com
 Si bien ninguno de los integrantes del equipo tiene conocimiento en salud o epidemiología, como información complementaria es importante saber la información básica acerca de MPOX (viruela del simio, mono o símica): síntomas, forma de contagio, diagnóstico, tratamiento, etc. 
 
 <br/>
-<br/>
-<br/>
 
 ## 2. Unificación y Limpieza del Conjunto de Datos
 
 ### 2.1. Unificación y Limpieza
 De acuerdo a la base de datos y la descripción en la documentación dada por el Instituto Nacional de Salud como entidad proveedora de datos (https://www.ins.gov.co/BibliotecaDigital/catalogo-variables-viruela-simica.pdf) se tomaron la siguiente tabla que identifica las variables del dataset conformado por 3.908 Filas y 24 Columnas:
 
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
+| Nombre de la columna | Tipo                                                               | Categoría         |
+| -------------------- | ------------------------------------------------------------------ | ----------------- |
 | Example Color | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #0a192f |
 | Example Color | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #f8f8f8 |
 | Example Color | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #00b48a |
@@ -33,7 +36,7 @@ De acuerdo a la base de datos y la descripción en la documentación dada por el
 
 
 Nombre de la columna	Tipo	Categoría
-Semana epidemiológica	Número	
+Semana epidemiológica	| Número | |
 Año epidemiológico	Número	
 Código DIVIPOLA departamento	Número	
 Código DIVIPOLA municipio	Número	
