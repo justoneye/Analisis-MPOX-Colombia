@@ -32,53 +32,30 @@ Si bien ninguno de los integrantes del equipo tiene conocimiento en salud o epid
 De acuerdo a la base de datos y la descripción en la documentación dada por el Instituto Nacional de Salud como entidad proveedora de datos (https://www.ins.gov.co/BibliotecaDigital/catalogo-variables-viruela-simica.pdf) se tomaron la siguiente tabla que identifica las variables del dataset conformado por 3.908 Filas y 24 Columnas:
 
 | Nombre de la columna | Tipo                                                               | Categoría         |
-| -------------------- | ------------------------------------------------------------------ | ----------------- |
+| ----------------- | ------------------------------------------------------------------ | -------------------- |
 | Semana epidemiológica	| Número | |
 | Año epidemiológico | Número | |
-| Código DIVIPOLA departamento| Número | |
+| Código DIVIPOLA departamento | Número | |
 | Código DIVIPOLA municipio	| Número | |
-| Departamento	Texto simple | |	
-| Municipio	Texto simple | |	
-| Fecha notificación	Texto simple | |	
-| Fecha diagnóstico	Texto simple | |	
-| Sexo	Texto simple	F - Femenino
-| M - Masculino
-Edad	Número	
-Unidad de medida	Número	1 - Años
-2 - Meses
-3 - Días
-Fecha de inicio de síntomas	Texto simple	
-Fecha de exantema	Texto simple	
-Hospitalización	Número	1 - SI
-2 - NO
-Condición final	Número	1 - Vivo
-2 - Muerto
-¿Viajó?	Número	1 - SI
-2 - NO
-País de viaje	Texto simple	
-Fuente de infección	Texto simple	EN ESTUDIO
-FUENTE DESCONOCIDA IMPORTADO
-RELACIONADO CON FUENTE DESCONOCIDA
-RELACIONADO CON LA IMPORTACIÓN
-Fecha de terminación del seguimiento	Texto simple	
-Pertenencia étnica	Número	1- Indígena
-2- ROM-Gitano
-3- Raizal
-4- Palenquero
-5- Negro, mulato, afro
-6- Otros
-Nombre grupo étnico	Texto simple	
-Tipo de seguridad social	Texto simple	C- Contributivo
-P- Excepción
-N- No asegurado
-S- Subsidiado
-E- Especial
-Estrato	Número	1
-2
-3
-4
-5
-6
+| Departamento | Texto simple | |	
+| Municipio	| Texto simple | |	
+| Fecha notificación | Texto simple | |	
+| Fecha diagnóstico	| Texto simple | |	
+| Sexo | Texto simple	| F - Femenino <br/> M - Masculino |
+| Edad | Número | |
+| Unidad de medida | Número | 1 - Años <br/> 2 - Meses <br/> 3 - Días |
+| Fecha de inicio de síntomas	| Texto simple | |	
+| Fecha de exantema	| Texto simple | |	
+| Hospitalización	| Número | 1 - SI <br/> 2 - NO |
+| Condición final	| Número | 1 - Vivo <br/> 2 - Muerto |
+| ¿Viajó?	| Número | 1 - SI <br/> 2 - NO |
+| País de viaje	| Texto simple | |	
+| Fuente de infección	| Texto simple | EN ESTUDIO <br/> FUENTE DESCONOCIDA IMPORTADO <br/> RELACIONADO CON FUENTE DESCONOCIDA <br/> RELACIONADO CON LA IMPORTACIÓN |
+| Fecha de terminación del seguimiento | Texto simple | |	
+| Pertenencia étnica | Número | 1- Indígena <br/> 2- ROM-Gitano <br/> 3- Raizal <br/> 4- Palenquero <br/> 5- Negro, mulato, afro <br/> 6- Otros |
+| Nombre grupo étnico	| Texto simple | |	
+| Tipo de seguridad social | Texto simple | C- Contributivo <br/> P- Excepción <br/> N- No asegurado <br/> S- Subsidiado <br/> E- Especial |
+| Estrato	| Número | 1 <br/> 2 <br/> 3 <br/> 4 <br/> 5 <br/> 6 |
 
 ### 2.2 Análisis Exploratorio de Datos 
 Tras terminar el EDA y verificar las relaciones entre variables, para iniciar el trabajo de análisis de información se realizaron las siguientes modificaciones en los tipos de datos correspondientes: 
