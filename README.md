@@ -1,1 +1,136 @@
 # Analisis-MPOX-Colombia
+
+## Descripción del Proyecto
+
+### 1.1. Impacto del análisis con el conjunto de datos
+Actualmente, Colombia se encuentra enfrentado la epidemia de Viruela símica también conocida como viruela del mono. Si bien, las autoridades competentes se encuentran en las gestiones requeridas, como ciudadanos es necesario estar informados en cuanto a su evolución, identificar los puntos de mayor contagio, personas a las que más afecta, sintomatología y demás información que nos permita poder estar alerta en el cuidado de nuestra salud.  Así como en lo discutido en el grupo, algunos tienen la percepción de que esta epidemia no es relevante en su día a día, sin embargo, no es una opinión unánime. Por lo anterior, es necesario hacer visible, mediante el uso de datos, que a pesar de que es una enfermedad que no tiene tanta discusión como la del coronavirus, está presente entre nosotros y es necesario tener precauciones en la cotidianidad.
+
+### 1.2. Problema Especifico 
+Basado en la información recolectada hasta la fecha en Colombia:
+- ¿Cuántas personas se han contagiado?, ¿Dónde están ubicados los casos?, ¿Es posible saber cuál es la mayor fuente de contagio?, ¿Cuánto dura la hospitalización promedio? 
+
+### 1.3.  Restricciones del análisis  
+De acuerdo con la información encontrada en la página de datos, se tomará como fecha de corte de información la última actualización (5 de diciembre de 2022), en caso de que se agreguen nuevos datos, no se tendrán en cuenta. Adicionalmente, dado que la Viruela en Colombia es relativamente nueva, es factible que no se encuentren tantas fuentes adicionales a la hora de citar.
+
+### 1.4.  Información complementaria  
+Si bien ninguno de los integrantes del equipo tiene conocimiento en salud o epidemiología, como información complementaria es importante saber la información básica acerca de MPOX (viruela del simio, mono o símica): síntomas, forma de contagio, diagnóstico, tratamiento, etc. 
+
+<br/>
+<br/>
+<br/>
+
+## 2. Unificación y Limpieza del Conjunto de Datos
+
+### 2.1. Unificación y Limpieza
+De acuerdo a la base de datos y la descripción en la documentación dada por el Instituto Nacional de Salud como entidad proveedora de datos (https://www.ins.gov.co/BibliotecaDigital/catalogo-variables-viruela-simica.pdf) se tomaron la siguiente tabla que identifica las variables del dataset conformado por 3.908 Filas y 24 Columnas:
+
+| Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| Example Color | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #0a192f |
+| Example Color | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #f8f8f8 |
+| Example Color | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #00b48a |
+| Example Color | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
+
+
+Nombre de la columna	Tipo	Categoría
+Semana epidemiológica	Número	
+Año epidemiológico	Número	
+Código DIVIPOLA departamento	Número	
+Código DIVIPOLA municipio	Número	
+Departamento	Texto simple	
+Municipio	Texto simple	
+Fecha notificación	Texto simple	
+Fecha diagnóstico	Texto simple	
+Sexo	Texto simple	F - Femenino
+M - Masculino
+Edad	Número	
+Unidad de medida	Número	1 - Años
+2 - Meses
+3 - Días
+Fecha de inicio de síntomas	Texto simple	
+Fecha de exantema	Texto simple	
+Hospitalización	Número	1 - SI
+2 - NO
+Condición final	Número	1 - Vivo
+2 - Muerto
+¿Viajó?	Número	1 - SI
+2 - NO
+País de viaje	Texto simple	
+Fuente de infección	Texto simple	EN ESTUDIO
+FUENTE DESCONOCIDA IMPORTADO
+RELACIONADO CON FUENTE DESCONOCIDA
+RELACIONADO CON LA IMPORTACIÓN
+Fecha de terminación del seguimiento	Texto simple	
+Pertenencia étnica	Número	1- Indígena
+2- ROM-Gitano
+3- Raizal
+4- Palenquero
+5- Negro, mulato, afro
+6- Otros
+Nombre grupo étnico	Texto simple	
+Tipo de seguridad social	Texto simple	C- Contributivo
+P- Excepción
+N- No asegurado
+S- Subsidiado
+E- Especial
+Estrato	Número	1
+2
+3
+4
+5
+6
+
+### 2.2 Análisis Exploratorio de Datos 
+Tras terminar el EDA y verificar las relaciones entre variables, para iniciar el trabajo de análisis de información se realizaron las siguientes modificaciones en los tipos de datos correspondientes: 
+
+Nombre de columna	Tipo	Tratamiento	Observaciones
+Semana epidemiológica	Número	Conservar	Información completa y formato correcto.
+Año epidemiológico	Número	Conservar	Información completa y formato correcto.
+Código DIVIPOLA departamento	Número	Eliminar	La información se encuentra en la columna DEPARTAMENTO.
+Código DIVIPOLA municipio	Número	Eliminar	La información se encuentra en la columna MUNICIPIO.
+Departamento	Texto simple	Corregir	Algunas de las capitales principales de Colombia aparecían etiquetadas como departamento, para lo cual se tomó dichas filas y se cambió al departamento correspondiente.
+Municipio	Texto simple	Corregir	Revisión de escritura correcta de los nombres de municipios.
+Fecha notificación	Fecha	Conservar	Información completa y formato correcto.
+Fecha diagnóstico	Fecha	Conservar	Información completa y formato correcto.
+Sexo	Texto simple	Conservar	Información completa y formato correcto.
+Edad	Número	Conservar	Información completa y formato correcto.
+Unidad de medida	Número	Eliminar	Todos los registros de edad usaron años como la misma unidad de medida.
+Fecha de inicio de síntomas	Fecha	Conservar	Información completa y formato correcto.
+Fecha de exantema	Fecha	Conservar	Información completa y formato correcto.
+Hospitalización	Número	Categorizar	Convertir 1 y 2 a SI y NO según documentación.
+Condición final	Número	Eliminar	Ninguno de los registros reportó hasta la fecha de corte alguna persona fallecida.
+¿Viajó?	Número	Categorizar	Convertir 1 y 2 a SI y NO según documentación.
+
+Para los datos con categoría 3, del cual no aparece ninguna información en la documentación, para lo cual se decidió que, si la columna de país de viaje estaría vacía, reemplazar el dato con NO, en caso contrario reemplazar con SI.
+País de viaje	Texto simple	Conservar	El campo no está unificado ya que tiene muchos países y ciudades, cuyo formato de escritura no puede ser legible o de fácil tratamiento estadístico.
+Fuente de infección	Texto simple	Conservar	Información completa y formato correcto.
+Fecha de terminación del seguimiento	Fecha	Conservar	Información completa y formato correcto.
+Pertenencia étnica	Número	Categorizar	Convertir números a la categoría correspondiente según documentación.
+Nombre grupo étnico	Texto simple	Eliminar	Todos los registros están vacíos.
+Tipo de seguridad social	Texto simple	Conservar	Convertir números a la categoría correspondiente según documentación.
+Estrato	Número	Conservar	En 2.820 filas (72% de los reportes) aparece el número 999, del cual no aparece ninguna información en la documentación sobre qué podría significar esta categoría.
+
+Tras terminar el proceso de EDA, el dataset para análisis y estudio está conformado por 3.908 Filas y 18 Columnas. Adicionalmente, para continuar con el análisis del dataset y en vista del tipo de algunos datos se crearon los siguientes campos:
+Nombre de columna	Tipo	Observaciones
+Continente_Viaje	Texto simple	Ya que no existe una unificación de datos completa del cómo se presenta el o los puntos exactos de viaje, al analizar la información notamos que los viajes internacionales se hacían hacia el mismo continente, para lo cual decidimos agregar este campo.
+Coordenadas	Número	Punto de referencia del municipio de reporte del caso
+Latitud	Número	Latitud del municipio de reporte del caso.
+Longitud	Número	Longitud del municipio de reporte del caso.
+
+Finalmente, la versión final del dataset para la creación de tablero para su posterior análisis está conformado por 3.908 Filas y 22 Columnas.
+
+
+
+# Análisis de Estadísticas de Nacidos Vivos del Hospital Manuel Uribe Ángel en Envigado, Antioquia
+### (Aplicación de Metodología CRISP-DM)
+
+Universidad Militar Nueva Granada
+<br/>
+Ingeniería en Multimedia
+<br/>
+Big Data / [Ing. Marcela Mejía](https://www.umng.edu.co/documents/20127/0/MARCELA+MEJIA.pdf/68fee29d-ffa5-de8f-4254-af01df420479?t=1599703431196)
+<br/>
+_Presentado por [Pilar Camargo Márquez](https://www.linkedin.com/in/pilarcamargo/) (1201656) y [Andrés Lindarte Niño](https://www.linkedin.com/in/andr%C3%A9s-lindarte-709876113/) (1201397)_
+<br/>
+<br/>
+<br/>
