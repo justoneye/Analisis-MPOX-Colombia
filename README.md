@@ -1,4 +1,8 @@
 # Análisis de Casos Positivos de Viruela Símica en Colombia
+De acuerdo a los lineamientos del Proyecto Opcional del curso de [Fundamentos en Analítica de Datos](https://www.correlation-one.com/es-co/data-science-for-all-colombia) que se desarrollará con [Datos Abiertos](https://www.datos.gov.co/). Si bien son opcionales, los proyectos son una parte esencial del programa de DS4A / Colombia - Fundamentos en Analitica de Datos, y están diseñados para complementar el aprendizaje de los estudiantes para que se conviertan en parte de su portafolio de experiencia como Analistas de Datos en el ámbito laboral.
+<br/>
+<br/>
+<br/>
 
 ## 1. Descripción del Proyecto
 
@@ -29,23 +33,16 @@ De acuerdo a la base de datos y la descripción en la documentación dada por el
 
 | Nombre de la columna | Tipo                                                               | Categoría         |
 | -------------------- | ------------------------------------------------------------------ | ----------------- |
-| Example Color | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #0a192f |
-| Example Color | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #f8f8f8 |
-| Example Color | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #00b48a |
-| Example Color | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
-
-
-Nombre de la columna	Tipo	Categoría
-Semana epidemiológica	| Número | |
-Año epidemiológico	Número	
-Código DIVIPOLA departamento	Número	
-Código DIVIPOLA municipio	Número	
-Departamento	Texto simple	
-Municipio	Texto simple	
-Fecha notificación	Texto simple	
-Fecha diagnóstico	Texto simple	
-Sexo	Texto simple	F - Femenino
-M - Masculino
+| Semana epidemiológica	| Número | |
+| Año epidemiológico | Número | |
+| Código DIVIPOLA departamento| Número | |
+| Código DIVIPOLA municipio	| Número | |
+| Departamento	Texto simple | |	
+| Municipio	Texto simple | |	
+| Fecha notificación	Texto simple | |	
+| Fecha diagnóstico	Texto simple | |	
+| Sexo	Texto simple	F - Femenino
+| M - Masculino
 Edad	Número	
 Unidad de medida	Número	1 - Años
 2 - Meses
@@ -121,19 +118,3 @@ Latitud	Número	Latitud del municipio de reporte del caso.
 Longitud	Número	Longitud del municipio de reporte del caso.
 
 Finalmente, la versión final del dataset para la creación de tablero para su posterior análisis está conformado por 3.908 Filas y 22 Columnas.
-
-
-
-# Análisis de Estadísticas de Nacidos Vivos del Hospital Manuel Uribe Ángel en Envigado, Antioquia
-### (Aplicación de Metodología CRISP-DM)
-
-Universidad Militar Nueva Granada
-<br/>
-Ingeniería en Multimedia
-<br/>
-Big Data / [Ing. Marcela Mejía](https://www.umng.edu.co/documents/20127/0/MARCELA+MEJIA.pdf/68fee29d-ffa5-de8f-4254-af01df420479?t=1599703431196)
-<br/>
-_Presentado por [Pilar Camargo Márquez](https://www.linkedin.com/in/pilarcamargo/) (1201656) y [Andrés Lindarte Niño](https://www.linkedin.com/in/andr%C3%A9s-lindarte-709876113/) (1201397)_
-<br/>
-<br/>
-<br/>
