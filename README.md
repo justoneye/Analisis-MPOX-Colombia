@@ -110,4 +110,5 @@ Finalmente, la versión final del dataset para la creación de tablero para su p
 
 ## 3. Tablero de control y visualización
 
-<iframe width="600" height="450" src="https://datastudio.google.com/embed/reporting/42163ea7-1976-4a79-8719-dc902bcb3e52/page/GZMAD" frameborder="0" style="border:0" allowfullscreen></iframe>
+### [Link de Tablero de Control - Looker Studio](https://datastudio.google.com/u/0/reporting/42163ea7-1976-4a79-8719-dc902bcb3e52/page/GZMAD)
+[Link de Documento PDF](https://github.com/justoneye/Analisis-MPOX-Colombia/blob/main/An%C3%A1lisis_MPOX_Grupo68.pdf)
