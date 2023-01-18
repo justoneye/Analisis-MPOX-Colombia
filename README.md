@@ -68,7 +68,7 @@ De acuerdo a la base de datos y la [descripción en la documentación](https://w
 | Estrato	| Número | 1 <br/> 2 <br/> 3 <br/> 4 <br/> 5 <br/> 6 |
 
 ### 2.2 Análisis Exploratorio de Datos 
-Para iniciar el trabajo de análisis de información se realizaron las siguientes modificaciones en los tipos de datos correspondientes ded acuerdo al proceso de [Análisis Exploratorio de Datos (EDA)](https://www.ibm.com/co-es/cloud/learn/exploratory-data-analysis) para verificar las relaciones entre variables: 
+Para iniciar el trabajo de análisis de información se realizaron las siguientes modificaciones en los tipos de datos correspondientes ded acuerdo al proceso de [Análisis Exploratorio de Datos (EDA)](https://www.ibm.com/co-es/cloud/learn/exploratory-data-analysis) para [verificar consistencia de datos y las relaciones entre variables](https://www.datos.gov.co/d/tmet-yeek/visualization): 
 
 | Nombre de la columna | Tipo  | Tratamiento       | Observaciones
 | ----------------- | ------------------------------------------------------------------ | -------------------- | ------------------------------------------------------------------ |
