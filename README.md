@@ -86,7 +86,9 @@ Para iniciar el trabajo de análisis de información se realizaron las siguiente
 | Tipo de seguridad social | Texto simple | Conservar | Convertir números a la categoría correspondiente según documentación. |
 | Estrato | Número | Conservar | En 2.820 filas (72% de los reportes) aparece el número 999, del cual no aparece ninguna información en la documentación sobre qué podría significar esta categoría. |
 
-Tras terminar el proceso de EDA, el dataset para análisis y estudio está conformado por 3.908 Filas y 18 Columnas. Adicionalmente, para continuar con el análisis del dataset y en vista del tipo de algunos datos se crearon los siguientes campos:
+Tras terminar el proceso de EDA, el dataset para análisis y estudio está conformado por 3.908 Filas y 18 Columnas.
+<br/><br/>
+Adicionalmente, para continuar con el análisis del dataset y en vista del tipo de algunos datos se crearon los siguientes campos:
 | Nombre de la columna | Tipo  | Observaciones
 | ----------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------ |
 | Continente_Viaje | Texto simple | Ya que no existe una unificación de datos completa del cómo se presenta el o los puntos exactos de viaje, al analizar la información notamos que los viajes internacionales se hacían hacia el mismo continente, para lo cual decidimos agregar este campo. |
