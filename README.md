@@ -1,5 +1,5 @@
 # Análisis de Casos Positivos de Viruela Símica en Colombia
-De acuerdo a los lineamientos del Proyecto Opcional del curso de [Fundamentos en Analítica de Datos](https://www.correlation-one.com/es-co/data-science-for-all-colombia) que se desarrollará con [Datos Abiertos](https://www.datos.gov.co/). Si bien son opcionales, los proyectos son una parte esencial del programa de DS4A / Colombia - Fundamentos en Analitica de Datos, y están diseñados para complementar el aprendizaje de los estudiantes para que se conviertan en parte de su portafolio de experiencia como Analistas de Datos en el ámbito laboral.
+El Proyecto Opcional con [Datos Abiertos](https://www.datos.gov.co/) es una actividad optativa del curso de [Fundamentos en Analítica de Datos](https://www.correlation-one.com/es-co/data-science-for-all-colombia) dictado por [Correlation One](https://www.correlation-one.com/), que busca promover el trabajo en equipo en un proyecto de análisis de datos reales y disponibles públicamente. Este proyecto están diseñados para complementar el aprendizaje de los estudiantes para que se conviertan en parte de su portafolio de experiencia como Analistas de Datos en el ámbito laboral y la participación se recompensa con la posibilidad de obtener la certificación del curso con la distinción de honores.
 <br/>
 <br/>
 <br/>
