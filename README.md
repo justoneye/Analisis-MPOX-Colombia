@@ -58,7 +58,7 @@ De acuerdo a la base de datos y la descripción en la documentación dada por el
 | Estrato	| Número | 1 <br/> 2 <br/> 3 <br/> 4 <br/> 5 <br/> 6 |
 
 ### 2.2 Análisis Exploratorio de Datos 
-Tras terminar el EDA y verificar las relaciones entre variables, para iniciar el trabajo de análisis de información se realizaron las siguientes modificaciones en los tipos de datos correspondientes: 
+Para iniciar el trabajo de análisis de información se realizaron las siguientes modificaciones en los tipos de datos correspondientes [Análisis Exploratorio de Datos (EDA)](https://www.ibm.com/co-es/cloud/learn/exploratory-data-analysis) y verificar las relaciones entre variables,: 
 
 | Nombre de la columna | Tipo  | Tratamiento       | Observaciones
 | ----------------- | ------------------------------------------------------------------ | -------------------- | ------------------------------------------------------------------ |
@@ -77,20 +77,21 @@ Tras terminar el EDA y verificar las relaciones entre variables, para iniciar el
 | Fecha de exantema | Fecha | Conservar | Información completa y formato correcto. |
 | Hospitalización | Número | Categorizar | Convertir 1 y 2 a SI y NO según documentación. |
 | Condición final | Número | Eliminar | Ninguno de los registros reportó hasta la fecha de corte alguna persona fallecida. |
-| ¿Viajó? | Número | Categorizar | Convertir 1 y 2 a SI y NO según documentación. <br/><br/> Para los datos con categoría 3, del cual no aparece ninguna información en la documentación, para lo cual se decidió que, si la columna de país de viaje estaría vacía, reemplazar el dato con NO, en caso contrario reemplazar con SI.
-| País de viaje | Texto simple | Conservar | El campo no está unificado ya que tiene muchos países y ciudades, cuyo formato de escritura no puede ser legible o de fácil tratamiento estadístico.
-| Fuente de infección | Texto simple | Conservar | Información completa y formato correcto.
-| Fecha de terminación del seguimiento | Fecha | Conservar | Información completa y formato correcto.
-| Pertenencia étnica | Número | Categorizar | Convertir números a la categoría correspondiente según documentación.
-| Nombre grupo étnico | Texto simple | Eliminar | Todos los registros están vacíos.
-| Tipo de seguridad social | Texto simple | Conservar | Convertir números a la categoría correspondiente según documentación.
-| Estrato | Número | Conservar | En 2.820 filas (72% de los reportes) aparece el número 999, del cual no aparece ninguna información en la documentación sobre qué podría significar esta categoría.
+| ¿Viajó? | Número | Categorizar | Convertir 1 y 2 a SI y NO según documentación. <br/><br/> Para los datos con categoría 3, del cual no aparece ninguna información en la documentación, para lo cual se decidió que, si la columna de país de viaje estaría vacía, reemplazar el dato con NO, en caso contrario reemplazar con SI. |
+| País de viaje | Texto simple | Conservar | El campo no está unificado ya que tiene muchos países y ciudades, cuyo formato de escritura no puede ser legible o de fácil tratamiento estadístico. |
+| Fuente de infección | Texto simple | Conservar | Información completa y formato correcto. |
+| Fecha de terminación del seguimiento | Fecha | Conservar | Información completa y formato correcto. |
+| Pertenencia étnica | Número | Categorizar | Convertir números a la categoría correspondiente según documentación. |
+| Nombre grupo étnico | Texto simple | Eliminar | Todos los registros están vacíos. |
+| Tipo de seguridad social | Texto simple | Conservar | Convertir números a la categoría correspondiente según documentación. |
+| Estrato | Número | Conservar | En 2.820 filas (72% de los reportes) aparece el número 999, del cual no aparece ninguna información en la documentación sobre qué podría significar esta categoría. |
 
 Tras terminar el proceso de EDA, el dataset para análisis y estudio está conformado por 3.908 Filas y 18 Columnas. Adicionalmente, para continuar con el análisis del dataset y en vista del tipo de algunos datos se crearon los siguientes campos:
-Nombre de columna	Tipo	Observaciones
-Continente_Viaje	Texto simple	Ya que no existe una unificación de datos completa del cómo se presenta el o los puntos exactos de viaje, al analizar la información notamos que los viajes internacionales se hacían hacia el mismo continente, para lo cual decidimos agregar este campo.
-Coordenadas	Número	Punto de referencia del municipio de reporte del caso
-Latitud	Número	Latitud del municipio de reporte del caso.
-Longitud	Número	Longitud del municipio de reporte del caso.
+| Nombre de la columna | Tipo  | Observaciones
+| ----------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------ |
+| Continente_Viaje | Texto simple | Ya que no existe una unificación de datos completa del cómo se presenta el o los puntos exactos de viaje, al analizar la información notamos que los viajes internacionales se hacían hacia el mismo continente, para lo cual decidimos agregar este campo. |
+| Coordenadas | Número | Punto de referencia del municipio de reporte del caso. |
+| Latitud | Número | Latitud del municipio de reporte del caso. |
+| Longitud | Número | Longitud del municipio de reporte del caso. |
 
 Finalmente, la versión final del dataset para la creación de tablero para su posterior análisis está conformado por 3.908 Filas y 22 Columnas.
