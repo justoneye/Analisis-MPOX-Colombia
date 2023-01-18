@@ -13,8 +13,7 @@ Este proyecto está diseñado para complementar el aprendizaje de los estudiante
 ## 0. Información Básica del Proyecto
 - Equipo de proyecto: Grupo 68.
 - Tema del Proyecto: [Casos positivos de Viruela símica en Colombia](https://www.datos.gov.co/Salud-y-Protecci-n-Social/Casos-positivos-de-Viruela-s-mica-en-Colombia/tmet-yeek)
-
-- #### [Dataframe de trabajo (con fecha de corte 2022/12/05)](https://github.com/justoneye/Analisis-MPOX-Colombia/blob/main/MPOX_DEPURADO.csv)
+- [Dataframe de trabajo (Fecha de corte: 2022/12/05)](https://github.com/justoneye/Analisis-MPOX-Colombia/blob/main/MPOX_DEPURADO.csv)
 
 <br/>
 
@@ -112,7 +111,7 @@ Adicionalmente, para continuar con el análisis del dataset y en vista del tipo 
 
 Finalmente, la versión final del dataset para la creación de tablero para su posterior análisis está conformado por *__3.908 Filas y 22 Columnas__*.
 
-### [Link a Dataframe modificado (con fecha de corte 2022/12/05)](https://github.com/justoneye/Analisis-MPOX-Colombia/blob/main/MPOX_DEPURADO.csv)
+### [Link a Dataframe depurado (Fecha de corte: 2022/12/05)](https://github.com/justoneye/Analisis-MPOX-Colombia/blob/main/MPOX_DEPURADO.csv)
 
 <br/>
 
