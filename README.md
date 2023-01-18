@@ -67,8 +67,8 @@ Para iniciar el trabajo de análisis de información se realizaron las siguiente
 | ----------------- | ------------------------------------------------------------------ | -------------------- | ------------------------------------------------------------------ |
 | Semana epidemiológica | Número | Conservar | Información completa y formato correcto. |
 | Año epidemiológico | Número | Conservar | Información completa y formato correcto. |
-| Código DIVIPOLA departamento | Número | Eliminar | La información se encuentra en la columna DEPARTAMENTO. |
-| Código DIVIPOLA municipio | Número | Eliminar | La información se encuentra en la columna MUNICIPIO. |
+| [Código DIVIPOLA](https://geoportal.dane.gov.co/geovisores/territorio/consulta-divipola-division-politico-administrativa-de-colombia/) departamento | Número | Eliminar | La información se encuentra en la columna DEPARTAMENTO. |
+| [Código DIVIPOLA](https://geoportal.dane.gov.co/geovisores/territorio/consulta-divipola-division-politico-administrativa-de-colombia/) municipio | Número | Eliminar | La información se encuentra en la columna MUNICIPIO. |
 | Departamento | Texto simple | Corregir | Algunas de las capitales principales de Colombia aparecían etiquetadas como departamento, para lo cual se tomó dichas filas y se cambió al departamento correspondiente. |
 | Municipio | Texto simple | Corregir | Revisión de escritura correcta de los nombres de municipios. |
 | Fecha notificación | Fecha | Conservar | Información completa y formato correcto. |
@@ -77,7 +77,7 @@ Para iniciar el trabajo de análisis de información se realizaron las siguiente
 | Edad | Número | Conservar | Información completa y formato correcto. |
 | Unidad de medida | Número | Eliminar | Todos los registros de edad usaron años como la misma unidad de medida. |
 | Fecha de inicio de síntomas | Fecha | Conservar | Información completa y formato correcto. |
-| Fecha de exantema | Fecha | Conservar | Información completa y formato correcto. |
+| Fecha de [exantema](https://www.lne.es/salud/guia/2022/05/30/exantema-vesicular-siente-sintoma-alarmante-66712543.html) | Fecha | Conservar | Información completa y formato correcto. |
 | Hospitalización | Número | Categorizar | Convertir 1 y 2 a SI y NO según documentación. |
 | Condición final | Número | Eliminar | Ninguno de los registros reportó hasta la fecha de corte alguna persona fallecida. |
 | ¿Viajó? | Número | Categorizar | Convertir 1 y 2 a SI y NO según documentación. <br/><br/> Para los datos con categoría 3, del cual no aparece ninguna información en la documentación, para lo cual se decidió que, si la columna de país de viaje estaría vacía, reemplazar el dato con NO, en caso contrario reemplazar con SI. |
