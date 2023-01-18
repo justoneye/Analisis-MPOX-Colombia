@@ -1,3 +1,7 @@
+<div align="center">
+    <img src="https://raw.githubusercontent.com/justoneye/Analisis-MPOX-Colombia/main/monkeypox_banner.png" alt="monkeypox_banner" width="100%"/>
+</div>
+
 # Análisis de Casos Positivos de Viruela Símica en Colombia
 El Proyecto Opcional con [Datos Abiertos](https://www.datos.gov.co/) es una actividad optativa del curso de [Fundamentos en Analítica de Datos](https://www.correlation-one.com/es-co/data-science-for-all-colombia) dictado por [Correlation One](https://www.correlation-one.com/) en alianza con [MinTIC](https://www.mintic.gov.co/portal/inicio/Sala-de-prensa/Noticias/273757:Ministerio-TIC-abre-7-000-cupos-para-formacion-TIC-de-calidad-para-todas-las-regiones-del-pais), que busca promover el trabajo en equipo en un proyecto de análisis de datos reales y disponibles públicamente.
 <br/>
