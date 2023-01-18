@@ -97,3 +97,7 @@ Adicionalmente, para continuar con el análisis del dataset y en vista del tipo 
 | Longitud | Número | Longitud del municipio de reporte del caso. |
 
 Finalmente, la versión final del dataset para la creación de tablero para su posterior análisis está conformado por *__3.908 Filas y 22 Columnas__*.
+
+## 3. Tablero de control y visualización
+
+<iframe width="600" height="450" src="https://datastudio.google.com/embed/reporting/42163ea7-1976-4a79-8719-dc902bcb3e52/page/GZMAD" frameborder="0" style="border:0" allowfullscreen></iframe>
