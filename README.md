@@ -22,14 +22,14 @@ Basado en la información recolectada hasta la fecha en Colombia:
 De acuerdo con la información encontrada en la página de datos, se tomará como fecha de corte de información la última actualización (5 de diciembre de 2022), en caso de que se agreguen nuevos datos, no se tendrán en cuenta. Adicionalmente, dado que la Viruela en Colombia es relativamente nueva, es factible que no se encuentren tantas fuentes adicionales a la hora de citar.
 
 ### 1.4.  Información complementaria  
-Si bien ninguno de los integrantes del equipo tiene conocimiento en salud o epidemiología, como información complementaria es importante saber la información básica acerca de MPOX (viruela del simio, mono o símica): síntomas, forma de contagio, diagnóstico, tratamiento, etc. 
+Si bien ninguno de los integrantes del equipo tiene conocimiento en salud o epidemiología, como información complementaria es importante saber la [información básica acerca de MPOX](https://medlineplus.gov/spanish/mpox.html) (viruela del simio, mono o símica): síntomas, forma de contagio, diagnóstico, tratamiento, etc. 
 
 <br/>
 
 ## 2. Unificación y Limpieza del Conjunto de Datos
 
 ### 2.1. Unificación y Limpieza
-De acuerdo a la base de datos y la descripción en la documentación dada por el Instituto Nacional de Salud como entidad proveedora de datos (https://www.ins.gov.co/BibliotecaDigital/catalogo-variables-viruela-simica.pdf) se tomaron la siguiente tabla que identifica las variables del dataset conformado por 3.908 Filas y 24 Columnas:
+De acuerdo a la base de datos y la [descripción en la documentación](https://www.ins.gov.co/BibliotecaDigital/catalogo-variables-viruela-simica.pdf) dada por el [Instituto Nacional de Salud](https://www.datos.gov.co/browse?Informaci%C3%B3n-de-la-Entidad_Nombre-de-la-Entidad=Instituto+Nacional+de+Salud) como entidad proveedora de datos se tomaron la siguiente tabla que identifica las variables del dataset conformado por *3.908 Filas y 24 Columnas*:
 
 | Nombre de la columna | Tipo                                                               | Categoría         |
 | ----------------- | ------------------------------------------------------------------ | -------------------- |
@@ -58,7 +58,7 @@ De acuerdo a la base de datos y la descripción en la documentación dada por el
 | Estrato	| Número | 1 <br/> 2 <br/> 3 <br/> 4 <br/> 5 <br/> 6 |
 
 ### 2.2 Análisis Exploratorio de Datos 
-Para iniciar el trabajo de análisis de información se realizaron las siguientes modificaciones en los tipos de datos correspondientes [Análisis Exploratorio de Datos (EDA)](https://www.ibm.com/co-es/cloud/learn/exploratory-data-analysis) y verificar las relaciones entre variables,: 
+Para iniciar el trabajo de análisis de información se realizaron las siguientes modificaciones en los tipos de datos correspondientes ded acuerdo al proceso de [Análisis Exploratorio de Datos (EDA)](https://www.ibm.com/co-es/cloud/learn/exploratory-data-analysis) para verificar las relaciones entre variables: 
 
 | Nombre de la columna | Tipo  | Tratamiento       | Observaciones
 | ----------------- | ------------------------------------------------------------------ | -------------------- | ------------------------------------------------------------------ |
@@ -86,14 +86,14 @@ Para iniciar el trabajo de análisis de información se realizaron las siguiente
 | Tipo de seguridad social | Texto simple | Conservar | Convertir números a la categoría correspondiente según documentación. |
 | Estrato | Número | Conservar | En 2.820 filas (72% de los reportes) aparece el número 999, del cual no aparece ninguna información en la documentación sobre qué podría significar esta categoría. |
 
-Tras terminar el proceso de EDA, el dataset para análisis y estudio está conformado por 3.908 Filas y 18 Columnas.
+Tras terminar el proceso de EDA, el dataset para análisis y estudio está conformado por *3.908 Filas y 18 Columnas*.
 <br/><br/>
 Adicionalmente, para continuar con el análisis del dataset y en vista del tipo de algunos datos se crearon los siguientes campos:
 | Nombre de la columna | Tipo  | Observaciones
-| ----------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------ |
+| :----------------- | :------------------------------------------------------------------ | :------------------------------------------------------------------ |
 | Continente_Viaje | Texto simple | Ya que no existe una unificación de datos completa del cómo se presenta el o los puntos exactos de viaje, al analizar la información notamos que los viajes internacionales se hacían hacia el mismo continente, para lo cual decidimos agregar este campo. |
 | Coordenadas | Número | Punto de referencia del municipio de reporte del caso. |
 | Latitud | Número | Latitud del municipio de reporte del caso. |
 | Longitud | Número | Longitud del municipio de reporte del caso. |
 
-Finalmente, la versión final del dataset para la creación de tablero para su posterior análisis está conformado por 3.908 Filas y 22 Columnas.
+Finalmente, la versión final del dataset para la creación de tablero para su posterior análisis está conformado por *__3.908 Filas y 22 Columnas__*.
