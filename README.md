@@ -60,23 +60,24 @@ De acuerdo a la base de datos y la descripción en la documentación dada por el
 ### 2.2 Análisis Exploratorio de Datos 
 Tras terminar el EDA y verificar las relaciones entre variables, para iniciar el trabajo de análisis de información se realizaron las siguientes modificaciones en los tipos de datos correspondientes: 
 
-Nombre de columna	Tipo	Tratamiento	Observaciones
-Semana epidemiológica	Número	Conservar	Información completa y formato correcto.
-Año epidemiológico	Número	Conservar	Información completa y formato correcto.
-Código DIVIPOLA departamento	Número	Eliminar	La información se encuentra en la columna DEPARTAMENTO.
-Código DIVIPOLA municipio	Número	Eliminar	La información se encuentra en la columna MUNICIPIO.
-Departamento	Texto simple	Corregir	Algunas de las capitales principales de Colombia aparecían etiquetadas como departamento, para lo cual se tomó dichas filas y se cambió al departamento correspondiente.
-Municipio	Texto simple	Corregir	Revisión de escritura correcta de los nombres de municipios.
-Fecha notificación	Fecha	Conservar	Información completa y formato correcto.
-Fecha diagnóstico	Fecha	Conservar	Información completa y formato correcto.
-Sexo	Texto simple	Conservar	Información completa y formato correcto.
-Edad	Número	Conservar	Información completa y formato correcto.
-Unidad de medida	Número	Eliminar	Todos los registros de edad usaron años como la misma unidad de medida.
-Fecha de inicio de síntomas	Fecha	Conservar	Información completa y formato correcto.
-Fecha de exantema	Fecha	Conservar	Información completa y formato correcto.
-Hospitalización	Número	Categorizar	Convertir 1 y 2 a SI y NO según documentación.
-Condición final	Número	Eliminar	Ninguno de los registros reportó hasta la fecha de corte alguna persona fallecida.
-¿Viajó?	Número	Categorizar	Convertir 1 y 2 a SI y NO según documentación.
+| Nombre de la columna | Tipo  | Tratamiento       | Observaciones
+| ----------------- | ------------------------------------------------------------------ | -------------------- | ------------------------------------------------------------------ |
+| Semana epidemiológica | Número | Conservar | Información completa y formato correcto. |
+| Año epidemiológico | Número | Conservar | Información completa y formato correcto. |
+| Código DIVIPOLA departamento | Número | Eliminar | La información se encuentra en la columna DEPARTAMENTO. |
+| Código DIVIPOLA municipio | Número | Eliminar | La información se encuentra en la columna MUNICIPIO. |
+| Departamento | Texto simple | Corregir | Algunas de las capitales principales de Colombia aparecían etiquetadas como departamento, para lo cual se tomó dichas filas y se cambió al departamento correspondiente. |
+| Municipio | Texto simple | Corregir | Revisión de escritura correcta de los nombres de municipios. |
+| Fecha notificación | Fecha | Conservar | Información completa y formato correcto. |
+| Fecha diagnóstico | Fecha | Conservar | Información completa y formato correcto. |
+| Sexo | Texto simple | Conservar | Información completa y formato correcto. |
+| Edad | Número | Conservar | Información completa y formato correcto. |
+| Unidad de medida | Número | Eliminar | Todos los registros de edad usaron años como la misma unidad de medida. |
+| Fecha de inicio de síntomas | Fecha | Conservar | Información completa y formato correcto. |
+| Fecha de exantema | Fecha | Conservar | Información completa y formato correcto. |
+| Hospitalización | Número | Categorizar | Convertir 1 y 2 a SI y NO según documentación. |
+| Condición final | Número | Eliminar | Ninguno de los registros reportó hasta la fecha de corte alguna persona fallecida. |
+| ¿Viajó? | Número | Categorizar | Convertir 1 y 2 a SI y NO según documentación. |
 
 Para los datos con categoría 3, del cual no aparece ninguna información en la documentación, para lo cual se decidió que, si la columna de país de viaje estaría vacía, reemplazar el dato con NO, en caso contrario reemplazar con SI.
 País de viaje	Texto simple	Conservar	El campo no está unificado ya que tiene muchos países y ciudades, cuyo formato de escritura no puede ser legible o de fácil tratamiento estadístico.
