@@ -5,6 +5,11 @@ El Proyecto Opcional con [Datos Abiertos](https://www.datos.gov.co/) es una acti
 Este proyecto está diseñado para complementar el aprendizaje de los estudiantes para que se conviertan en parte de su portafolio de experiencia como Analistas de Datos en el ámbito laboral y la participación se recompensa con la posibilidad de obtener la certificación del curso con la distinción de honores.
 <br/>
 <br/>
+
+## 0. Información Básica del Proyecto
+- Equipo de proyecto: Grupo 68.
+- Tema del Proyecto: [Casos positivos de Viruela símica en Colombia](https://www.datos.gov.co/Salud-y-Protecci-n-Social/Casos-positivos-de-Viruela-s-mica-en-Colombia/tmet-yeek)
+
 <br/>
 
 ## 1. Descripción del Proyecto
