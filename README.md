@@ -120,6 +120,24 @@ Finalmente, la versión final del dataset para la creación de tablero para su p
     <img src="https://raw.githubusercontent.com/justoneye/Analisis-MPOX-Colombia/main/An%C3%A1lisis_MPOX_Grupo68-Dashboard.png" alt="Análisis MPOX Colombia - Dashboard" width="100%"/>
 </div>
 
-[Link de Documento PDF](https://github.com/justoneye/Analisis-MPOX-Colombia/blob/main/An%C3%A1lisis_MPOX_Grupo68.pdf)
+### [Link de Documento PDF](https://github.com/justoneye/Analisis-MPOX-Colombia/blob/main/An%C3%A1lisis_MPOX_Grupo68.pdf)
 
 <br/>
+
+## 4. Conclusiones
+
+- Los departamentos que reportaron la mayor cantidad de casos registrados son: Bogotá D.C. con una cifra de 1.947, seguido por Antioquia con 1.121 y Valle del Cauca con 323. Este resultado es congruente a la concentración poblacional que se da en Colombia y esto se refleja en el hecho de que las zonas con mayor densidad demográfica  se encuentran en el top de contagios. 
+
+- Del total de casos de contagios registrados, 43 personas tuvieron que ser hospitalizadas, es decir, cerca del 1,1% de personas requirieron un tratamiento especial, lo que quiere decir que todavía no representa una amenaza de pandemia, diferente al COVID.
+
+- El rango de edades que presentan un mayor caso de contagios está entre los 26 y 34 años de edad, siendo los 29 la edad con mayores registros.  Lo que ofrece unpreguntas que claramente se pueden responder desde la subjetividad, como por ejemplo: ¿qué hace a las personas que tienen esa edad son más vulnerables al virus?, ¿Se debe a una mayor exposición de escenarios donde es más probable contagiarse del virus? Sin embargo, son preguntas que necesitan fuentes adicionales para dar una respuesta certera. 
+
+- Acerca de la información recopilada al estrato perteneciente de cada individuo, en su mayoría no daban una respuesta concreta. Por lo tanto, de la información recopilada, el estrato 3 es el que más aparece, seguido del 2, y en menor medida del 4. Este es una clara representación de las brechas que tienen los datos, pues a pesar de ser relevante para poder conocer las dinámicas sociales que se ven expresadas en este tipo de casos, muchas veces no se cuenta con la información completa.
+
+- Del mismo modo, dado que es una infección viral que ha comenzado a esparcirse por todo el planeta, se dificulta conocer a ciencia cierta el detonante del contagio, pues usualmente las personas no detectan un diferenciante relevante que explique si fue a causa de una exposición directa o se transmitió de otra manera.
+
+- Al analizar los casos segmentados por sexo, la Viruela del Mono tiene una predominancia de contagio en la población masculina.  Esto no sólo es un hecho que pase en Colombia,  pues los esfuerzos que se han llevado a cabo en cuanto a vacunación y prevención han tomado como principal objetivo a los hombres. Lo cual indica que Colombia no es una excepción a las tendencias globales relacionadas a contagio del virus.
+
+- Si bien existe buena información sobre los casos de contagio de esta enfermedad, que muchas personas no estén seguras de identificar la fuente de contagio dificulta posibles medidas que puedan tomarse al respecto para prevenir el contagio e identificar fuentes.
+
+- Finalmente,  de la información con la que se cuenta, se detectan casos de personas que han viajado a Colombia y han traído la infección. Por ello, se resalta que los principales casos que involucran movimiento de un país a otro, se encuentran entre el continente de América.
